@@ -10,9 +10,25 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    gap: 5px;
+    gap: 1px;
     width: 100vw;
     height: 100vh;
     padding: 3px;
+}
+
+.gridSquare{
+    background-color: pink;
+}
+
+.hover{
+    background-color: black;
+}
+
+/* Styling for bottom of etch-a-sketch */
+.dot{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
 }
