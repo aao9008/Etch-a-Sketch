@@ -24,9 +24,6 @@ function createGrid(){
         // Create div element
         const div = document.createElement('div');
 
-        // Set element content and element class for styling
-        div.textContent= i;
-
         div.classList.add('gridSquare');
 
         // Add div element as child of .container element

@@ -1,23 +1,68 @@
 *{
     box-sizing: border-box;
+    background-color: #FF0000 ;
+    color: white;
+    font-family: 'Bradley Hand', cursive;
+    font-style: oblique;
+}
+
+html{
+    background-color: white;
 }
 
 body{
     margin: 0%;
     width: 100vw;
     height: 100vh;
+    background-image: url("images/90s.jpg");
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style sketch size */
+.main{
+    display: flex;
+    flex-direction: column;
+    border: #e10707;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    min-width: 60vw;
+    min-height: 80vh;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.foot, .header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 60px;
+    margin: 0px;
+    color: gold;
+}
+
+.header{
+    justify-content: center;
 }
 
 .container{
     display: grid;
-    gap: 1px;
-    width: 100vw;
-    height: 100vh;
-    padding: 3px;
+    gap: 0px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: White;
+    flex: 1;
 }
 
 .gridSquare{
-    background-color: pink;
+    background-color:white;
 }
 
 .hover{
@@ -26,9 +71,26 @@ body{
 
 /* Styling for bottom of etch-a-sketch */
 .dot{
-    height: 25px;
-    width: 25px;
-    background-color: red;
+    height: 40px;
+    width: 40px;
+    background-color: white;
     border-radius: 50%;
     display: inline-block;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.gridSize{
+    background-color: white;
+    color: black;
+    border-style: none;
+    border-radius: 10px;
+    height: 40px;
+    font-family:sans-serif ;
+    font-style:normal;
+    cursor: pointer;
+    transition: all 7ms ease;
+}
+
+.gridSize:active{
+    transform: scale(0.9);
 }
