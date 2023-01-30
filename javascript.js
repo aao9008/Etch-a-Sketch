@@ -82,3 +82,8 @@ function resize(){
 
     return;
 }
+
+// Add button to clear grid 
+const clear = document.querySelector('.clear')
+
+clear.addEventListener('click',createGrid);
